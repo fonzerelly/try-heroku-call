@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react'
 
 function App() {
+  const [d, setD] = useState('hh:mm:ss');
+  fetch('test.json')
+    .then((response) => response.text())
+    .then((data) => {
+      const result = data.match(/\d\d:\d\d:\d\d/)
+      console.log(result);
+      setD(result)
+    })
+  
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +28,7 @@ function App() {
         >
           Learn React
         </a>
+        <h1>{d}</h1>
       </header>
     </div>
   );
