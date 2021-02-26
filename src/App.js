@@ -4,7 +4,8 @@ import {useState} from 'react'
 
 function App() {
   const [d, setD] = useState('hh:mm:ss');
-  fetch('test.json')
+  // fetch('test.json')
+  fetch('api/date')
     .then((response) => response.text())
     .then((data) => {
       const result = data.match(/\d\d:\d\d:\d\d/)
