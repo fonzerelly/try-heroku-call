@@ -9,6 +9,6 @@ test('renders learn react link', () => {
 
 describe('let test fail!', () => {
   it('should fail', () => {
-    expect(true).toBe(true);
+    expect(true).toBe(false);
   })
 })
