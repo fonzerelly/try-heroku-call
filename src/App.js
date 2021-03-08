@@ -30,7 +30,7 @@ function App() {
           Learn React
         </a>
         <h1>{d}</h1>
-        <h2>TEST</h2>
+        <h2>TEST new issue</h2>
       </header>
     </div>
   );
