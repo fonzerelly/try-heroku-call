@@ -31,6 +31,10 @@ function App() {
         </a>
         <h1>{d}</h1>
         <h2>TEST new issue</h2>
+        <ul>
+          <li>test 1</li>
+          <li>test 2</li>
+        </ul>
       </header>
     </div>
   );
